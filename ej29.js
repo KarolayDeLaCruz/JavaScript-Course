@@ -37,6 +37,8 @@ function my_alert(msg) {
     bind_close();
 }
 
+
+
 function $(selector) {
     return document.querySelector(selector);
 }

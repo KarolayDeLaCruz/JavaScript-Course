@@ -1,0 +1,38 @@
+<!--Declarar objetos con funciones-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Tutor(nombre,apellido) {
+            this.nombre=nombre;
+            this.saludar=function () {
+                console.log("Hola a todos soy "+this.nombre);
+            }
+            if (typeof apellido != 'undefined'){
+                this.nombre_completo=nombre+apellido;
+            }
+
+        }
+
+        Tutor.prototype.edad=25;
+
+
+        //objeto1... prototipe de objeto karo es Tutor
+        var karo=new Tutor("Karolay ","DLC");
+        //objeto2
+        var emi= new Tutor("Emily ","DLC");
+
+        //atributo edad---prototype asigna a
+        // todos los objetos el mismo valor de atributo edad
+        console.log(karo.edad);
+        console.log(emi.edad);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- Closures y callbacks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <script>
+
+        /*--Closure: Funcion dentro de otra funcion--*/
+        (function() {
+
+ //           document.getElementById('btn').addEventListener("click",function(){
+ //               console.log("Hizo click");
+//            });
+
+
+ //           setTimeout(function () {
+ //               console.log("Tiempo limite")
+ //           },5000)
+
+            setTimeout(function() {
+                console.log(hola_mundo("Karo"));
+            },100);
+
+        })();
+
+        //funcion padre
+         function hola_mundo(nombre) {
+            function construct() {
+                return "Hola "+nombre;
+            }
+            return construct();
+         }
+
+    </script>
+</body>
+</html>

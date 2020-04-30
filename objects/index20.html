@@ -1,0 +1,34 @@
+<!--Declarar objetos con funciones-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Tutor(nombre,apellido) {
+            this.nombre=nombre;
+            this.saludar=function () {
+                console.log("Hola a todos soy "+this.nombre);
+            }
+            if (typeof apellido != 'undefined'){
+                this.nombre_completo=nombre+apellido;
+            }
+
+        }
+
+
+        //objeto1
+        var karo=new Tutor("Karolay ","DLC");
+        karo.saludar();
+        //objeto2
+        var emi= new Tutor("Emily ","DLC");
+        emi.saludar();
+
+        console.log(karo.nombre_completo)
+
+    </script>
+</body>
+</html>

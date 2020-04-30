@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getters y Setters</title>
+</head>
+<body>
+    <script>
+        var arreglos=[1,2,3,4];
+
+        var objeto_json={
+            //atributos
+            titulo: "Curso javascript",
+            videos: 19,
+            tutor_valor: "k",
+
+            get tutor(){
+                return this.tutor_valor.toUpperCase();
+            },
+            set tutor(tutor){
+                this.tutor_valor=tutor;
+            }
+        }
+
+        objeto_json.tutor="Dina";
+        console.log(objeto_json.tutor)
+
+/*            getTutor:function () {
+                return this.tutor.toUpperCase();
+            },
+            setTutor:function (tutor) {
+                this.tutor=tutor;
+            }
+        }
+        objeto_json.setTutor("karo");
+        console.log(objeto_json.getTutor());
+*/
+
+    </script>
+</body>
+</html>

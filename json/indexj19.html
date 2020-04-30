@@ -1,0 +1,33 @@
+<!--Json javascript object notation
+    parecido a diccionario
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var arreglos=[1,2,3,4];
+
+        var objeto_json={
+            //atributos
+            titulo: "Curso javascript",
+            videos: 19,
+            tutor: "k",
+
+            //metodos
+            introduccion: function () {
+                console.log("Bienvenido al "+ this.titulo+" que tiene "+this.videos+" videos")
+//                this.otra_funcion();
+            },
+            otra_funcion: function () {}
+
+        }
+        //acceder al elemento titulo
+        console.log(objeto_json.introduccion());
+    </script>
+</body>
+</html>
